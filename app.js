@@ -8,7 +8,7 @@ let cnt = 0;
 // static page serving
 app.use(express.static(path.join(__dirname, 'html')));
 
-var PORT = process.env.PORT || 8080;
+var PORT = 8080;
 
 app.get("/", async(req,res,next) => {
   res.render('index');
